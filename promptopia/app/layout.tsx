@@ -1,4 +1,5 @@
 import React from "react";
+import Nav from "@components/Nav";
 import "@styles/globals.css";
 
 export const metadata = {
@@ -17,7 +18,11 @@ export default function RootLayout({
         <div className="main">
           <div className="gradient" />
         </div>
-        <main className="app">{children}</main>
+        <main className="app">
+          <Nav></Nav>
+
+          {children}
+        </main>
       </body>
     </html>
   );
